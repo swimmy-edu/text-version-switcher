@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>読み替え判定ページ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="printTitle" class="print-only">
+        Minecraft with Python <br>
+        進め方について
+    </div>
+    <div class="container">
+        <select id="chapterSelect">
+            <option value="">現在学習中の章を選択してください</option>
+            <!-- Options will be populated by JavaScript -->
+        </select>
+
+        <select id="exerciseSelect">
+            <option value="">次回学習予定の問題番号を選択してください</option>
+            <!-- Options will be populated by JavaScript -->
+        </select>
+
+        <div id="guide">
+            <!-- Guidance text will be populated by JavaScript -->
+        </div>
+
+        <button onclick="handlePrint()">印刷（A5サイズ推奨）</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
